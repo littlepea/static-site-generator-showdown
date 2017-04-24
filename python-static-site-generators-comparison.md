@@ -41,7 +41,7 @@ So, with that out of the way, let's begin!
 
 ### Cactus setup
 
-Let's create a default website following the [official documentation](https://github.com/eudicots/Cactus):
+We could create a default website following the [official documentation](https://github.com/eudicots/Cactus):
 
 ```commandline
 pip install cactus
@@ -50,11 +50,9 @@ cd cactus_blog
 cactus serve
 ```
 
-Open the site in a browser and see the default page:
+But I've decided to use their [GUI for Mac](http://www.cactusformac.com/) application to create a Blog:
 
-![](https://www.evernote.com/l/AHRHrZvl5ANHZJyselR2vJ1iYyDTfRnuwH8B/image.png)
-
-P.S. You could also do this using their [GUI for Mac](http://www.cactusformac.com/).
+![](https://www.evernote.com/l/AHSfGR7DlSRL-43C2-jxsRIyNw1_hud6cB0B/image.png)
 
 ### Pelican setup
 
@@ -134,11 +132,11 @@ And this is it:
 
 ![](https://www.evernote.com/l/AHQQAqgYz_ZGK4bLvCOrOmwmrI89q4JfQMgB/image.png)
 
-### And the winner is...
+### And the winner is Cactus!
 
-A tie between Cactus and Lektor. 
-Both have a very simple setup process and the OSX apps are very convenient.
-Pelican was ok, and Nikola was slightly annoying...
+Lektor was almost as easy to setup. Both have a very simple setup process and the OSX apps are very convenient.
+
+Pelican was ok, Nikola was slightly annoying...
 
 ## Theming
 

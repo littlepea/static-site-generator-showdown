@@ -94,3 +94,6 @@ ENV/
 # Data
 *.db
 *.sqlite3
+
+# Other
+Icon*
