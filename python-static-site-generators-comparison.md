@@ -54,6 +54,42 @@ Open the site in a browser and see the default page:
 
 ![](https://www.evernote.com/l/AHRHrZvl5ANHZJyselR2vJ1iYyDTfRnuwH8B/image.png)
 
+P.S. You could also do this using their [GUI for Mac](http://www.cactusformac.com/).
+
+### Pelican setup
+
+Let's do the same for Pelican following their [Quickstart guide](http://docs.getpelican.com/en/stable/quickstart.html):
+
+```commandline
+pip install pelican markdown
+mkdir -p pelican_blog
+cd pelican_blog
+pelican-quickstart
+```
+
+It asked us a bunch of questions about new project and created some scripts 
+as well as `content` directory where we can add our first dummy blog post `keyboard-review.md`:
+
+```markdown
+Title: My First Review
+Date: 2010-12-03 10:20
+Category: Review
+
+Following is a review of my favorite mechanical keyboard.
+```
+
+Then we run the pelican command to generate our site:
+
+```commandline
+pelican content
+cd output/
+python -m pelican.server
+```
+
+And here it is in action:
+
+![](https://www.evernote.com/l/AHQL3puW6V5BNLpTAvh7ojbYGAq3Y-56qGgB/image.png)
+
 ## Theming
 
 ...
