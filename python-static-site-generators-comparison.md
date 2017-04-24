@@ -90,6 +90,31 @@ And here it is in action:
 
 ![](https://www.evernote.com/l/AHQL3puW6V5BNLpTAvh7ojbYGAq3Y-56qGgB/image.png)
 
+### Nikola setup
+
+For Nikola we're following their [Getting Started guide](https://getnikola.com/getting-started.html):
+
+```commandline
+pip install Nikola
+nikola init --demo nikola_blog
+cd nikola_blog/
+nikola build
+nikola new_post -e
+```
+
+It created an empty blog post in `posts/my-first-blog-post.rst`.
+
+Then I needed to re-build the site and start the dev server:
+
+```commandline
+nikola build
+nikola serve --browser
+```
+
+And here we go:
+
+![](https://www.evernote.com/l/AHRBbajZgrxIHLOazVcfjJKIafbAl0gczegB/image.png)
+
 ## Theming
 
 ...

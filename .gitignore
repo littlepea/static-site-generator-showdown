@@ -11,6 +11,7 @@ __pycache__/
 env/
 build/
 .build/
+cache/
 output/
 develop-eggs/
 dist/
@@ -89,3 +90,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Data
+*.db
+*.sqlite3
