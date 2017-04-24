@@ -150,7 +150,17 @@ and then start applying it to each of the blogs.
 
 ### Customizing Cactus
 
-...
+I had to:
+
+* replace `templates/base.html` and `pages/index.html` with the contents of `index.html` 
+* define all the necessary blocks like `title`, `content`, etc...
+* copy the styles from `blog.css` to `static/css/style.css`
+* fix the links to static assets with `{% static %}` template tag
+* customize `templates/post.html` to display each single post correctly
+
+That's it!
+
+![](https://www.evernote.com/l/AHTCFI4hw45IDIJugmmaBAxlXdyAaE7g2EwB/image.png)
 
 ### Customizing Pelican
 
