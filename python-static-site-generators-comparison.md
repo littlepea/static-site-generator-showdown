@@ -39,7 +39,20 @@ So, with that out of the way, let's begin!
 
 ## Ease of use / Setup
 
-...
+### Cactus setup
+
+Let's create a default website following the [official documentation](https://github.com/eudicots/Cactus):
+
+```commandline
+pip install cactus
+cactus create cactus_blog
+cd cactus_blog
+cactus serve
+```
+
+Open the site in a browser and see the default page:
+
+![](https://www.evernote.com/l/AHRHrZvl5ANHZJyselR2vJ1iYyDTfRnuwH8B/image.png)
 
 ## Theming
 
