@@ -162,6 +162,12 @@ That's it!
 
 ![](https://www.evernote.com/l/AHTCFI4hw45IDIJugmmaBAxlXdyAaE7g2EwB/image.png)
 
+Some limitations:
+
+* Can only use supported post fields like `title`, `headline`, `author`, `date`. Couldn't use `tags`.
+* Posts are in `html` files with `{% filter markdown %}` instead of `.md` files
+* `archive.html` page needs to be implemented separately from `index.html`
+
 ### Customizing Pelican
 
 ...
