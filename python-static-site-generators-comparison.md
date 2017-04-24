@@ -134,7 +134,35 @@ And this is it:
 
 ![](https://www.evernote.com/l/AHQQAqgYz_ZGK4bLvCOrOmwmrI89q4JfQMgB/image.png)
 
+### And the winner is...
+
+A tie between Cactus and Lektor. 
+Both have a very simple setup process and the OSX apps are very convenient.
+Pelican was ok, and Nikola was slightly annoying...
+
 ## Theming
+
+Theming is probably the most important aspect in this evaluation, 
+I don't think many people are going to be happy with the default themes of any of these sites 
+so being able to customize easily is very important.
+
+First, I've downloaded the [static files](https://purecss.io/layouts/blog/download) 
+for the [blog layout](https://purecss.io/layouts/blog/) I've chosen 
+and then start applying it to each of the blogs.
+
+### Customizing Cactus
+
+...
+
+### Customizing Pelican
+
+...
+
+### Customizing Nikola
+
+...
+
+### Customizing Lektor
 
 ...
 
