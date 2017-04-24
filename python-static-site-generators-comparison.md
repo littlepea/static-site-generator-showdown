@@ -115,6 +115,25 @@ And here we go:
 
 ![](https://www.evernote.com/l/AHRBbajZgrxIHLOazVcfjJKIafbAl0gczegB/image.png)
 
+### Lektor setup
+
+For Lektor I've also followed the [Installation](https://www.getlektor.com/docs/installation/) and [Quickstart](https://www.getlektor.com/docs/quickstart/) guide.
+
+It should have been as easy as `pip install Lektor` but I've decided to go through their OSX app installation process 
+by downloading a DMG, installing `Lektor.app`, opening it and running `Install shell command` option.
+
+Then we can switch to CLI and start the new project:
+
+```commandline
+lektor quickstart
+cd lektor_blog/
+lektor server
+```
+
+And this is it:
+
+![](https://www.evernote.com/l/AHQQAqgYz_ZGK4bLvCOrOmwmrI89q4JfQMgB/image.png)
+
 ## Theming
 
 ...
