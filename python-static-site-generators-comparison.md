@@ -22,6 +22,7 @@ In this showdown we're going to compare the following 4 tools:
 
 And compare them based on the following criteria:
 
+* Features
 * Ease of use / setup
 * Theming
   * by integrating a [PureCSS](https://purecss.io/) based [blog example](https://purecss.io/layouts/blog/)
@@ -36,6 +37,10 @@ as it hasn't been updated in over a year, and [MkDocs](http://www.mkdocs.org/) o
 as I want to focus on blog/website use cases, not project documantation.
 
 So, with that out of the way, let's begin!
+
+## Features
+
+...
 
 ## Ease of use / Setup
 
@@ -170,7 +175,24 @@ Some limitations:
 
 ### Customizing Pelican
 
-...
+For Pelican, I've decided to follow their [Creating Themes](http://docs.getpelican.com/en/stable/themes.html) guide:
+
+* create a theme directory: `pelican_blog/themes/pure`
+* copy `css` and `images` into `pelican_blog/themes/pure/static/`
+* copy `index.html` into `pelican_blog/themes/pure/templates/`
+* separate `base.html` from `index.html`
+* change static assets links to something like `{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}`
+* add theme related [settings](http://docs.getpelican.com/en/stable/settings.html#themes)
+* render necessary content in `index.html` and `article.html`
+
+And this is it:
+
+![](https://www.evernote.com/l/AHThlit0919ORLlipjkIrG7M9PnHZJpv-x4B/image.png)
+
+It was pretty easy to customize, I like that templates are separated from pages (unlike Cactus), 
+and I could render tags.
+
+I couldn't render prev/next post navigation though, and I really didn't like that there's no auto-reloading dev server.
 
 ### Customizing Nikola
 

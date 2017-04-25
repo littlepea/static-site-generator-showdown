@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block page_title %}{{ article.title }}{% endblock page_title %}
+{% block content %}
+
+<div class="posts">
+	<h1 class="content-subhead">
+		<a id="title" href="/">Blog</a>
+	</h1>
+
+	<section class="post">
+
+		<header class="post-header">
+			<img width="48" height="48" alt="{{ article.authors.0 }}&#x27;s avatar" class="post-avatar"
+				 src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/common/ericf-avatar.png">
+
+			<h2 class="post-title">{{ article.title }}</h2>
+
+			<p class="post-meta">
+				By <a class="post-author" href="#">{{ article.authors.0 }}</a>
+				under {% for tag in article.tags %}
+					<a class="post-category post-category-js" href="#">{{ tag }}</a>
+				{% endfor %}
+				posted on {{ article.locale_date }}
+			</p>
+
+			<p>{{ article.summary }}</p>
+		</header>
+
+		<div class="post-description">
+			{{ article.content }}
+		</div>
+
+		<nav id="post-nav hide">
+			<span class="prev">
+				{% if prevPost %}
+					<a href='/{{ prevPost.path }}'>
+						<span class="arrow">&larr;</span> {{ prevPost.title }}
+					</a>
+				{% endif %}
+			</span>
+
+
+			<span class="next">
+				{% if nextPost %}
+					<a href='/{{ nextPost.path }}'>
+						{{ nextPost.title }} <span class="arrow">&rarr;</span>
+					</a>
+				{% endif %}
+			</span>
+		</nav>
+
+	</section>
+
+</div>
+
+{% endblock content %}
